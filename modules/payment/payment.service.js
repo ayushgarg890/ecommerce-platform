@@ -25,7 +25,6 @@ class PaymentService {
       const payment = new Payment({
         user : paymentData.user,
         order: paymentData._id,        
-        transactionId: error.id,
         amount : paymentData.totalAmount,
         status: 'failed',
       });
